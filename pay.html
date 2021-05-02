@@ -117,6 +117,7 @@ color: black;
 <button id="rzp-button1">Pay Using Razorpay</button>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
+
     const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('myParam');
 
@@ -126,7 +127,7 @@ var options = {
     "currency": "INR",
     "name": "FIDLE",
     "description": "DESIGNING",
-    "image": "https://example.com/your_logo",
+    "image": "logo.jpeg",
     "handler": function (response){
         alert(response.razorpay_payment_id);
         alert(response.razorpay_order_id);
